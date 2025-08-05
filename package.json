@@ -18,9 +18,13 @@
     "build:linux": "npm run transplie:electron && npm run build:vue && electron-builder --linux --x64"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.11",
+    "os-utils": "^0.0.14",
+    "tailwindcss": "^4.1.11",
     "vue": "^3.5.17"
   },
   "devDependencies": {
+    "@types/os-utils": "^0.0.4",
     "@vitejs/plugin-vue": "^6.0.0",
     "@vue/tsconfig": "^0.7.0",
     "cross-env": "^10.0.0",
