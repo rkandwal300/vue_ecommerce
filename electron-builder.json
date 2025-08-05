@@ -2,6 +2,7 @@
     "appId":"com.rkandwal300.vue-ecoomerce",
     "icon":"./vue.svg",
     "files": ["dist-electron", "dist/vue"],
+    "extraResources":["dist-electron/preload.cjs"],
     "mac":{
         "target": "dmg"
     },
