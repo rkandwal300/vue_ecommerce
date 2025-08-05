@@ -21,7 +21,8 @@
     "@tailwindcss/vite": "^4.1.11",
     "os-utils": "^0.0.14",
     "tailwindcss": "^4.1.11",
-    "vue": "^3.5.17"
+    "vue": "^3.5.17",
+    "vue-remix-icons": "^3.15.0"
   },
   "devDependencies": {
     "@types/os-utils": "^0.0.4",
