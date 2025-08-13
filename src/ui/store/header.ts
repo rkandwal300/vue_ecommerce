@@ -19,7 +19,7 @@ export const useHeaderStore = defineStore('header', () => {
         { label: 'Men', icon: cart, href: '/pages/products/men' },
         { label: 'Women', icon: cart, href: '/pages/products/women' },
         { label: 'Brands', icon: cart, href: '/pages/brands' },
-        { label: 'About Us', icon: user, href: '/pages/aboutus' },
+        { label: 'About Us', icon: user, href: '/pages/about' },
         { label: 'Sizing Guide', icon: wishlist, href: '/pages/size-guide' },
         { label: 'Contact Us', icon: cart, href: '/pages/contact' },
     ])

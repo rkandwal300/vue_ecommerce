@@ -40,7 +40,7 @@
 </template>
 
 <script lang="ts" setup>
-import Datatable from '../shared/Datatable.vue';
+import Datatable from '../../components/shared/Datatable.vue';
 import { mensApparelSizing, sizingColumns, sizingDetails, womensApparelSizing } from './sizing.column';
 import SizingGuide from '../../assets/images/size-guide.webp';
 </script>
