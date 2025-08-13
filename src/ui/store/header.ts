@@ -14,7 +14,7 @@ export const useHeaderStore = defineStore('header', () => {
         { label: 'Shopping Cart', icon: cart, href: '/pages/shopping-cart' }
     ])
     const navList = readonly([
-        { label: 'Home', icon: cart, href: '/' }, sizing guide: added 
+        { label: 'Home', icon: cart, href: '/' },
         { label: 'Products', icon: cart, href: '/pages/products' },
         { label: 'Men', icon: cart, href: '/pages/products/men' },
         { label: 'Women', icon: cart, href: '/pages/products/women' },
