@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Header from './components/Header/Header.vue'
 import { onBeforeMount } from 'vue'
+import ResponsiveHeaderList from './components/Header/ResponsiveHeaderList.vue'
 
 onBeforeMount(() => {
   (window as any)?.electron?.subscribeStatistics((data: any) => console.log(data))
@@ -8,10 +9,11 @@ onBeforeMount(() => {
 </script>
 
 <template>
-  <div>
+  <v-app>
     <Header />
-
-  </div>
+    <ResponsiveHeaderList />
+    <router-view />
+  </v-app>
 </template>
 
 <style scoped>
