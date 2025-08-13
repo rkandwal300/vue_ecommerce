@@ -2,7 +2,7 @@
 import Header from './components/Header/Header.vue'
 import { onBeforeMount } from 'vue'
 import ResponsiveHeaderList from './components/Header/ResponsiveHeaderList.vue'
-import Footer from './components/Footer/Footer.vue'
+import Footer from './components/Footer.vue'
 
 onBeforeMount(() => {
   (window as any)?.electron?.subscribeStatistics((data: any) => console.log(data))
@@ -10,12 +10,15 @@ onBeforeMount(() => {
 </script>
 
 <template>
+  <!-- Let body handle scrolling -->
   <v-app>
-    <div class="h-screen flex flex-col justify-between">
-
+    <div class="flex flex-col min-h-screen overflow-x-hidden">
       <Header />
       <ResponsiveHeaderList />
-      <router-view />
+
+      <!-- Main content grows naturally -->
+      <router-view class="flex-1" />
+
       <Footer />
     </div>
   </v-app>

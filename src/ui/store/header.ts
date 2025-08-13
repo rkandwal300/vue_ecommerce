@@ -14,15 +14,14 @@ export const useHeaderStore = defineStore('header', () => {
         { label: 'Shopping Cart', icon: cart, href: '/pages/shopping-cart' }
     ])
     const navList = readonly([
-        { label: 'Home', icon: cart, href: '/' },
+        { label: 'Home', icon: cart, href: '/' }, sizing guide: added 
         { label: 'Products', icon: cart, href: '/pages/products' },
         { label: 'Men', icon: cart, href: '/pages/products/men' },
         { label: 'Women', icon: cart, href: '/pages/products/women' },
-        { label: 'Customer Support', icon: support, href: '/pages/customer-service' },
+        { label: 'Brands', icon: cart, href: '/pages/brands' },
         { label: 'About Us', icon: user, href: '/pages/aboutus' },
-        { label: 'Sizing Guide', icon: wishlist, href: '/pages/size-guiding' },
+        { label: 'Sizing Guide', icon: wishlist, href: '/pages/size-guide' },
         { label: 'Contact Us', icon: cart, href: '/pages/contact' },
-        { label: 'Brands', icon: cart, href: '/pages/brands' }
     ])
     /**
      * Function to set the visibility of the header

@@ -20,6 +20,7 @@
   "dependencies": {
     "@mdi/font": "^7.4.47",
     "@tailwindcss/vite": "^4.1.11",
+    "@tanstack/vue-table": "^8.21.3",
     "os-utils": "^0.0.14",
     "pinia": "^3.0.3",
     "tailwindcss": "^4.1.11",
@@ -31,6 +32,7 @@
   },
   "devDependencies": {
     "@types/os-utils": "^0.0.4",
+    "@types/vue-router": "^2.0.0",
     "@vitejs/plugin-vue": "^6.0.0",
     "@vue/tsconfig": "^0.7.0",
     "cross-env": "^10.0.0",

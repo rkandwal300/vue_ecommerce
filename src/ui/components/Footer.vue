@@ -1,6 +1,5 @@
 <template>
     <footer class="border-t border-secondary text-center font-light pt-8 pb-4">
-        <!-- Newsletter Section -->
         <div class="mb-8 px-4">
             <h2 class="text-lg font-semibold tracking-wide">NEWSLETTER SUBSCRIPTION</h2>
             <p class="text-sm !text-muted-foreground mt-2">
@@ -18,7 +17,7 @@
         </div>
 
         <v-divider class="mb-4" />
-        <!-- Copyright -->
+
         <div class="flex flex-col px-4">
             <p class="text-xs text-gray-500">
                 © 2025 Sheila Fashion Store Shopify. All Rights Reserved. Ecommerce Software by Rahul Kandwal.
