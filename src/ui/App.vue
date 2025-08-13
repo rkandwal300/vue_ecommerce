@@ -2,6 +2,7 @@
 import Header from './components/Header/Header.vue'
 import { onBeforeMount } from 'vue'
 import ResponsiveHeaderList from './components/Header/ResponsiveHeaderList.vue'
+import Footer from './components/Footer/Footer.vue'
 
 onBeforeMount(() => {
   (window as any)?.electron?.subscribeStatistics((data: any) => console.log(data))
@@ -10,9 +11,13 @@ onBeforeMount(() => {
 
 <template>
   <v-app>
-    <Header />
-    <ResponsiveHeaderList />
-    <router-view />
+    <div class="h-screen flex flex-col justify-between">
+
+      <Header />
+      <ResponsiveHeaderList />
+      <router-view />
+      <Footer />
+    </div>
   </v-app>
 </template>
 
