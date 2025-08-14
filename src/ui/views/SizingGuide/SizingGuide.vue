@@ -1,13 +1,7 @@
 <template>
     <section class="page">
-        <div class="container">
-            <ul class="flex flex-wrap items-center justify-center gap-1 text-xs font-light">
-                <li><router-link to="/">Home</router-link></li>
-                <li><span>/</span></li>
-                <li><span>Size Guide</span></li>
-            </ul>
-        </div>
-        <div class="pt-8 container">
+        <CurentRouteList :name="'Size Guide'" :className="'justify-center'" />
+        <div class="pt-6 container">
             <div class="flex flex-col items-center gap-4 text-center font-light">
                 <h1 class="text-2xl text-foreground">Sizing Guide</h1>
                 <p class="text-xs text-muted-foreground">This is an approximate conversion table to help you find your
@@ -43,4 +37,6 @@
 import Datatable from '../../components/shared/Datatable.vue';
 import { mensApparelSizing, sizingColumns, sizingDetails, womensApparelSizing } from './sizing.column';
 import SizingGuide from '../../assets/images/size-guide.webp';
+import { ROUTES_LIST } from '../../router/routes.enum';
+import CurentRouteList from '../../components/shared/curentRouteList.vue';
 </script>

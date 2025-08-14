@@ -1,13 +1,7 @@
 <template>
     <section class="page font-light min-h-[calc(100vh-120px)]">
+        <CurentRouteList :name="'About Our Site'" :className="'justify-center'" />
 
-        <div class="container">
-            <ul class="flex flex-wrap items-center justify-center gap-1 text-xs">
-                <li><router-link to="/">Home</router-link></li>
-                <li><span>/</span></li>
-                <li><span>About Our Site</span></li>
-            </ul>
-        </div>
         <p class="text-3xl font-normal text-center my-6">About Our Store</p>
         <div class="w-full object-cover object-center max-w-7xl mx-auto">
             <img :src="AboutImage" alt="sizing guide" class="w-full h-full object-cover">
@@ -30,4 +24,6 @@
 <script lang="ts" setup>
 import AboutImage from '../assets/images/about-page.webp';
 import SignImage from '../assets/images/blogs-about_large.webp';
+import CurentRouteList from '../components/shared/curentRouteList.vue';
+import { ROUTES_LIST } from '../router/routes.enum';
 </script>

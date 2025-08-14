@@ -1,7 +1,7 @@
 <template>
-    <header class="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur-sm">
+    <header class="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur-sm ">
         <div
-            class="mx-auto min-h-[50px] px-2.5 w-full self-center max-w-xl sm:max-w-2xl lg:max-w-7xl flex items-center justify-between">
+            class="mx-auto  min-h-[50px] px-4  w-full self-center max-w-xl sm:max-w-2xl lg:max-w-7xl flex items-center justify-between">
             <div class="flex items-center gap-5">
                 <button icon @click="setHeaderVisibility(!isHeaderVisible)" class="lg:hidden cursor-pointer">
                     <v-img :src="responsiveBar" alt="Open Menu" width="24" height="24" />
@@ -22,7 +22,7 @@
             </div>
         </div>
         <p class="w-full border-b hidden lg:block" />
-        <nav class=" mx-auto max-w-7xl w-full hidden lg:flex justify-between">
+        <nav class="mx-auto px-6 max-w-7xl w-full hidden lg:flex justify-between">
             <ul class="flex items-center">
                 <li v-for="nav in navList" :key="nav.label">
                     <router-link :to="nav.href" class="block px-4 py-2 font-light" :class="currentRoute.path === nav.href
