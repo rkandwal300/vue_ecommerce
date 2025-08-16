@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import Header from './components/Header/Header.vue'
 import { onBeforeMount } from 'vue'
+import ResponsiveHeaderList from './components/Header/ResponsiveHeaderList.vue'
+import Footer from './components/Footer.vue'
 
 onBeforeMount(() => {
   (window as any)?.electron?.subscribeStatistics((data: any) => console.log(data))
@@ -8,10 +10,18 @@ onBeforeMount(() => {
 </script>
 
 <template>
-  <div>
-    <Header />
+  <!-- Let body handle scrolling -->
+  <v-app>
+    <div class="flex flex-col min-h-screen overflow-x-hidden">
+      <Header />
+      <ResponsiveHeaderList />
 
-  </div>
+      <!-- Main content grows naturally -->
+      <router-view class="flex-1" />
+
+      <Footer />
+    </div>
+  </v-app>
 </template>
 
 <style scoped>
